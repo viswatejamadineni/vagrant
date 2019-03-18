@@ -35,4 +35,9 @@ sudo systemctl daemon-reload
 sudo systemctl enable tomcat
 sudo systemctl start tomcat
 
-
+cd 
+wget https://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+sudo rpm –ivh mysql57-community-release-el7-9.noarch.rpm
+sudo yum -y update
+sudo yum -y install mysql-server
+sudo systemctl start mysqld
